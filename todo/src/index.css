@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.todotrue{
+  text-decoration: line-through;
+  color:black;
+}
+
+.todofalse{
+  color:green;
+  
+}
+
+.formStyles{
+  display:flex;
+  
+}
