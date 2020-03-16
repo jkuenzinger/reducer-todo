@@ -2,8 +2,9 @@ import React from 'react';
 // in out reducer we are going to set up some intial state we are sayign in the intial state there is going to be an item 
 // initialized as an empty string we are also intializing with a false state for completed giving it the id of Date.now() so all 
 // created will have their own unique id's. We are also intialize them as an empty array so that it can hold all the items created in todo. 
-export const intialState=[{
-    item:'',
+export const intialState=[
+    {
+    item:'Avada Kedavra ',
     completed:false,
     id: Date.now(),
     itemArray:[]

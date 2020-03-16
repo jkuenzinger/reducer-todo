@@ -32,14 +32,16 @@ return(
 // to add a new item tot he list and render it on the dom
 // I am also bringing in handle clear so that it access that funciton in the reducer to remove the items that have been toggled to compeleted.
     <div>
-        <h1>To Do's</h1>
+        <h1 className='headerTitle'>Hogwarts Spell Mastery Guide</h1>
         <Todo id={state.id} todo={todo} dispatch={dispatch} state={state}/>
-        <form className='formStyles'>
-            <label htmlFor='todo'>Add Todo</label>
+       <div className='formStyles'>
+        <form className='formitemsstyles'>
+            <label htmlFor='todo'>Spell's to Master</label>
             <input id='todo' name='todo' type='text' value={todo} onChange={handleChanges}/>
-            <button onClick={handleSubmit}>Add Todo</button>
-            <button onClick={handleClear}>Clear Completed</button>
+            <button className='addbuttonstyle' onClick={handleSubmit}>Add Spell</button>
+            <button className='clearbuttonstyle' onClick={handleClear}>Clear Mastered Spells</button>
         </form>
+        </div>
     </div>
 )
 }

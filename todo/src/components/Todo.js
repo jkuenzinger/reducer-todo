@@ -9,10 +9,12 @@ const Todo = (props =>{
 
 // below in the return we are goign to return a div and we are going to map through the todo that exist in state and create
 // a div for each todo setting the key to the id and creating an h3 in each div containing the item that is to be on the todo list
-// we are also using teh handleToggle as an onclick for the div toggleing it between completed or not using the todo unique id for 
+// we are also using teh handleToggle as an onclick for the div toggling it between completed or not using the todo unique id for 
 // each div that is clicked
+    
+
     return(
-        <div>
+        <div className='spelldiv'>
             {props.state.map(todo =>{
                 return(
                  <div className={`todo${todo.completed} ? 'COMPLETED' : ""`} onClick={() => handleToggle(todo.id)} key={todo.id}>
