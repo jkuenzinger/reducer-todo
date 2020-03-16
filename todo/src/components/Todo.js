@@ -6,12 +6,14 @@ const Todo = (props =>{
     }
     return(
         <div>
-            return(
-                <div className={`todo${todo.completed} ? 'COMPLETED' : ''`} conClick={() => handleToggle(todo.id)}
-                key={todo.id}>
-                    <h3>{todo.item}</h3>
+            {props.state.map(todo =>{
+                return(
+                 <div className={`todo${todo.completed} ? 'COMPLETED' : ''`} conClick={() => handleToggle(todo.id)}
+                    key={todo.id}>
+                     <h3>{todo.item}</h3>
                 </div>
-            )
+                )
+            })}
         </div>
     )
 })

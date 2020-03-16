@@ -1,6 +1,6 @@
 import React, {useReducer, useState} from 'react';
 import Todo from './Todo';
-import {listReducer, intialState} from '../redcuers/listReducer';
+import {listReducer, intialState} from '../reducers/ReducerForList';
 
 
 const ToDoForm = () =>{
@@ -11,7 +11,7 @@ const ToDoForm = () =>{
         setTodo(event.target.value);
     }
     const handleSubmit = event => {
-        preventDefault();
+        event.preventDefault();
         dispatch({type: 'ADD-TODO', payload: todo})
     }
 
