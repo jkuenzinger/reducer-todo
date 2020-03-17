@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('hogwartscastlebackground.png');
+  background-size:auto;
+  background-repeat:no-repeat;
+  
+
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.todotrue{
+  display:flex;
+  justify-content:center;
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-decoration-color: #FFC500;
+  border-radius:15px;
+  width:30%;
+  margin-left:35%;
+  margin-bottom:1%;
+  margin-top:2%;
+  color: #FFC500;
+  background-color:#570A35;
+}
+
+.todofalse{
+  display:flex;
+  justify-content:center;
+  border-radius:15px;
+  width:30%;
+  margin-left:35%;
+  margin-bottom:1%;
+  margin-top:2%;
+  color: #FFC500;
+  background-color:#570A35;
+  
+  
+}
+
+.formStyles{
+  background-image: url('hogwartscrest.jpg');
+  background-attachment:stretch;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  border-radius:15px;
+  width: 35%;
+  margin-top:2%;
+margin:auto;
+  height:300px;
+  padding:45px; 
+  padding-bottom:50px;
+  
+}
+.spelldiv{
+  margin-top:2%;
+}
+.formitemsstyles{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:200px;
+
+}
+.addbuttonstyle{
+  margin-top:4%;
+  border-radius:15px;
+  color:#FFC500;
+  background-color: #570A35;
+}
+.clearbuttonstyle{
+  margin-top:3%;
+  border-radius:15px;
+  color:#FFC500;
+  background-color: #570A35;
+}
+
+input{
+  color:#FFC500;
+  background-color: #570A35;
+  margin-top:4%;
+}
+
+label{
+  color: #FFC500;
+  display:flex;
+  justify-content:center;
+  font-size:2rem;
+}
+.todoitems{
+  display:flex;
+  justify-content:center;
+
+}
+.headerTitle{
+    position: relative;
+    margin: 0 auto;
+    text-align:center;
+    clear: left;
+    height: auto;
+    z-index: 0;
+    border-radius:0px 0px 15px 15px;
+    color: #FFC500;
+   background-color:#570A35;
+   padding:30px;
+   width:60%;
+}
